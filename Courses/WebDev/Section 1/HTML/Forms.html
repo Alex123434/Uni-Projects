@@ -9,11 +9,81 @@
     <h1>Forms Demo</h1>
 
     <form action="/Bunnies">
-      <input type="text" placeholder="Type your name" />
+      <button type = "button">This is a reg button</button>
+      <p>
+      <label for="username" name = "username  ">Enter an username</label>
+      <input type="text" id = "username" placeholder="Type your name" />
       <input type="password" />
+      /<p>
       <input type="color" />
       <input type="number" />
       <input type="time" />
+
+      <button>Submit</button>
+    </form>
+<hr>
+    <form action="https://www.reddit.com/search">
+      <p>
+        <input type="text" name="q" id="">
+        <button type="submit">Search Reddit</button>
+      </p>
+    </form>
+
+    <h2>More inputs</h2>
+
+    <form action="/jig">
+
+  <input type="checkbox" id = TOS checked>
+  <label for="TOS">I agree to sucking dick</label>
+
+  <input type="radio" id = "pizza" name="Food" value="pizza">
+  <label for="pizza">Pizza</label>
+  <input type="radio" id = "burger" name="Food" value="buger">
+  <label for="burger">Buger</label>
+  <input type="radio" id = "cock" name="Food" value="cock">
+  <label for="cock">Cock</label>
+  <button>Submit</button>
+
+  <label for="Alcohol">Select your drink</label>
+
+  <select name="Alcohol" id="">
+    <option value="vodka">Vodka</option>
+    <option value="jagger">Jagger</option>
+
+
+  
+
+
+  </select>
+
+  <input type="range" id = "Satisfaction" min = 0 max = 10 name = "Sast" step="1 value = "5">
+  <label for="Satisfaction"> Whats your Satisfaction?</label>
+  <button>Submit</button>
+
+  <label for="Essay">Enter your Essay</label>
+  <textarea name="Essay" id="Essay" cols = "7" rows=" 9" placeholder="Suck me ick"></textarea>
+
+    </form>
+
+    <h2>Validation Demo</h2>
+    <form action="Pepe">
+
+      <p>
+      <label for="username">Enter your username:</label>
+      <input type="text" name="" id="username" required minlength="10">
+      </p>
+      <p>
+      <label for="name">Enter your name:</label>
+      <input type="text" name="" id="name">
+      </p>
+      <p>
+      <label for="last_name">Enter your last name:</label>
+      <input type="text" name="" id="last_name">
+     </p>
+      <button>Submit</button>
+
+
+
     </form>
   </body>
 </html>
