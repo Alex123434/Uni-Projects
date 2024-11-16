@@ -32,19 +32,19 @@ body {
     color: #767B91  ;
 }
 
-#logoName {
-    margin-right: auto;
-    margin-left: 1.5em;
-    font-weight: bold; 
-    font-family: "Alata", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
 #intro{
     margin-left: 2em;
     font-size: 1.6em;
     text-align:start;
     width: 50%;
     color: white;
+}
+
+#logo {
+    width: 50px; 
+    height: auto; 
+    display: block; 
+    margin-right: auto;
+    margin-left: 1.5em;
+    
 }
