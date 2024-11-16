@@ -1,7 +1,9 @@
 h1 {
 
     color: blueviolet;
-
+    font-weight: 900;
+    text-decoration:  red  dashed overline;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
 }
 
@@ -9,13 +11,17 @@ h2 {
 
     color: aqua;
     background-color: blue;
+    font-size: 70px;
 
 }
 
 p {
 
-    color: bisque;
-    background: orange; 
+  text-align: justify;
+  width: 50%;
+  line-height: 6;
+  letter-spacing: 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 button {
