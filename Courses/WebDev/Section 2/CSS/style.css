@@ -30,3 +30,19 @@ button {
     color: cadetblue;
     background-color: rgb(66, 34, 34);
 }
+
+h2 + button {
+
+    color: red;
+}
+
+footer > a{
+
+    color: black;
+}
+
+input[type="text"]{
+
+    color: red;
+
+}

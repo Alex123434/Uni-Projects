@@ -4,10 +4,26 @@ body {
    
 }
 
-.containerIntro{
-    background: linear-gradient(to bottom right, #2A324B 60%, #E1E5EE 50%);
-    height: 100vh;
+html {
+    overflow: -moz-scrollbars-none; 
+    -ms-overflow-style: none; 
 }
+
+body::-webkit-scrollbar {
+    display: none; 
+}
+
+
+
+.containerIntro {
+    background: linear-gradient(to bottom right, #2A324B, #767B91 60%, #E1E5EE 50%);
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    margin: 0;
+    padding: 0;
+}
+
+
 
 .nav {
     display: flex;
@@ -47,4 +63,112 @@ body {
     margin-right: auto;
     margin-left: 1.5em;
     
+}
+
+
+/* Contact Page */
+
+.Header {
+    background: linear-gradient(to bottom right, #2A324B, #767B91);
+    height: 100vh;
+}
+
+#introContact{
+    margin-left: 7em;
+    margin-top: 3em;
+    font-size: 5em;
+    text-align:start;
+    width: 50%;
+    color: white;
+}
+
+.contactBody{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    margin: 0; 
+ 
+}
+
+.contactInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    border: 2px solid ; 
+    border-radius: 20px;
+    color: #767B91;
+    padding: 1.5em;
+    width: 40em;
+    height: 20em;
+}
+
+.contactInfo a {
+
+    text-decoration: none;
+    color: #767B91;
+}
+
+.contactInfo p {
+
+    font-family: "Alata", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    color: #767B91;
+
+}
+
+.contactLogo{
+    width: 40px; 
+    height: 20px; 
+}
+
+.contactPlacement{
+
+    display: flex;
+    
+}
+
+.bottom{
+
+    margin-bottom: 1em;
+    margin-left: 3.5em;
+}
+
+.contactPlacement p{
+    margin-top: 0.1em;
+    margin-left: 1em;
+}
+
+#contactLine{
+
+    border: 1px solid #767B91;
+    width: 40em;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+   
+}
+
+/* Projects Page */
+
+#introProjects{
+    margin-left: 7em;
+    margin-top: 3em;
+    font-size: 5em;
+    text-align:start;
+    width: 50%;
+    color: white;
+}
+
+/* About Page */
+
+#introAbout{
+    margin-left: 8em;
+    margin-top: 3em;
+    font-size: 5em;
+    text-align:start;
+    width: 50%;
+    color: white;
 }
