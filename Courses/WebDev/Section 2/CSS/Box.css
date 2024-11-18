@@ -1,0 +1,13 @@
+div {
+
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    border-radius: 30px 30px 30px;
+    border: dashed  red 2px;
+    border-top: dashed  green 4px;
+    border-style: dashed 
+
+  
+
+}

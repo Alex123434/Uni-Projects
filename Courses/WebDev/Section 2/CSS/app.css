@@ -30,3 +30,58 @@ h1,h2{
 
     color: violet;
 }
+
+h2 + button {
+
+    color: red;
+}
+
+footer > a{
+
+    color: black;
+}
+
+input[type="text"]{
+
+    color: red;
+
+}
+
+button:hover{
+
+    background-color: blue;
+    color: blueviolet;
+}
+
+.post button:hover{
+    
+    background-color: blue;
+    color: white;
+}
+
+.post button:active{
+
+    background-color: black;
+}
+
+
+.post:nth-of-type(2n) {
+
+    background-color: chocolate;
+}
+
+h2::first-letter{
+
+    font-size: 40px;
+}
+
+h2::selection{
+
+    color: black;
+}
+
+
+body{
+
+    color: green;
+}
