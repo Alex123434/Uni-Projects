@@ -1,0 +1,29 @@
+body{
+
+    margin-left: 50px;
+    height: 1000px;
+    width: 100%;
+    
+}
+
+nav{
+
+    margin-left: 50px;
+    margin: auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+}
+
+section{
+
+    margin: auto;
+}
+
+img{
+    display: inline-block;
+    height: 300px;
+    border-radius: 25%;
+    margin: calc(10%/6);
+ 
+   
+}
