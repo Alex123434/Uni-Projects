@@ -7,16 +7,23 @@ h1 {
 #container {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
     background-color: #003049;
     width: 90%;
-    height: 500px;
+    /* height: 500px; */
     margin: 0 auto;
     border: 5px solid #003049;
 }
 
 #container div {
-    width: 400px;
     height: 200px;
+    flex-basis: 200px;
+    flex-grow: 1;
+}
+
+
+#container div :nth-of-type(1){
+
+    flex-grow: 1;
 }

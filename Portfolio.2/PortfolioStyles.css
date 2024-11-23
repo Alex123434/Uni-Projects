@@ -1,6 +1,7 @@
 body {
     background-color: #E1E5EE;
     margin: 0;
+    
    
 }
 
@@ -16,28 +17,34 @@ body::-webkit-scrollbar {
 
 
 .containerIntro {
-    background: linear-gradient(to bottom right, #2A324B, #767B91 70%, #E1E5EE 50%);
+    background: linear-gradient(#2A324B,  75%, #e1e5ee 80%);
     height: 100vh; /* Full viewport height */
     width: 100vw; /* Full viewport width */
     margin: 0;
     padding: 0;
 }
 
+.nav{
 
-
-.nav {
     display: flex;
-    align-items: center;
     justify-content: center;
-    justify-content: space-around; 
-    margin: 0 5em 0 5em;
-    font-size: 1.2em;
-    gap: 1em;
-    color: white;
-    margin-bottom: 4em;
+    align-items: center;
+
+    gap: 1rem;
 }
 
 .nav a {
+
+    text-decoration: none;
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    font-style: normal;
+    color: white;
+}
+
+.nav {
+    animation: fadeIn 1s ease-in-out;
     text-decoration: none;
     font-family: "Alata", sans-serif;
     font-weight: 400;
@@ -46,44 +53,53 @@ body::-webkit-scrollbar {
 }
 
 .nav a:hover {
-    color: #767B91  ;
+    color: #767B91;
+    transform: scale(1.05);
 }
 
-nav p{
 
-    margin-right: 0em;
-    margin-left: 0em;
-}
+.homeContainer{
 
-#intro{
     display: flex;
-    align-content: flex-end;
-    font-size: 1.6em;
-    text-align:start;
-    width: 50%;
+    justify-content: center;
+    align-items: center;
+
+
+}
+#homeTitle {
     color: white;
+    text-align: center;
+    width: 50%;
+    padding: 2rem;
+    font-size: 3.2rem;
+    line-height: 1.8;
+    margin: 5rem;
+    transition: transform 0.3s ease-in-out;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-#logo {
-    width: 50px; 
-    height: auto; 
-    display: block; 
-    margin-right: auto;
-    margin-left: 1.5em;
-    
+#homeTitle:hover {
+    transform: scale(1.05);
+    animation: moveRandom 0.5s infinite ease-in-out;
+}
+
+h1 {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 
 /* Contact Page */
-
-.Header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background: linear-gradient(to bottom right, #2A324B, #767B91);
-    height: 100vh;
-}
 
 #introContact{
     display: flex;
@@ -125,7 +141,8 @@ nav p{
 }
 
 .contactInfo p {
-
+    
+    margin-top: 20rem;
     font-family: "Alata", sans-serif;
     font-weight: 900;
     font-style: normal;
@@ -146,42 +163,35 @@ nav p{
 
 .bottom{
 
-    margin-bottom: 1em;
-    margin-left: 3.5em;
+    margin-bottom: 2rem;
+    margin-left: 3.5rem;
 }
 
 .contactPlacement p{
-    margin-top: 0.1em;
-    margin-left: 1em;
+    margin-top: 0.1rem;
+    margin-left: 1rem;
 }
 
 #contactLine{
 
     border: 1px solid #767B91;
-    width: 40em;
-    margin-top: 0.5em;
-    margin-bottom: 1em;
+    width: 40rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
    
 }
 
-/* Projects Page */
 
-#introProjects{
-    margin-left: 7em;
-    margin-top: 3em;
-    font-size: 5em;
-    text-align:start;
-    width: 50%;
-    color: white;
-}
+#aboutTitle{
 
-/* About Page */
-
-#introAbout{
-    margin-left: 8em;
-    margin-top: 3em;
-    font-size: 5em;
-    text-align:start;
-    width: 50%;
-    color: white;
+        color: white;
+        text-align: center;
+        width: 50%;
+        padding: 2rem;
+        font-size: 1.5rem;
+        line-height: 1.8;
+        margin: 10rem;
+        transition: transform 0.3s ease-in-out;
+        text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    
 }
