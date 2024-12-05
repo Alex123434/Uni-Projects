@@ -16,7 +16,7 @@ body::-webkit-scrollbar {
     justify-content: space-between; 
     align-items: center;
     gap: 1rem;
-    padding: 1rem; 
+    padding: 2rem; 
 }
 
 .nav a {
@@ -29,7 +29,7 @@ body::-webkit-scrollbar {
 }
 
 .nav .logo {
-    font-size: 3.5rem;
+    font-size: 3rem;
     position: absolute; 
     left: 50%; 
     transform: translateX(-50%);
@@ -40,7 +40,25 @@ body::-webkit-scrollbar {
     display: flex;  
     justify-content: flex-end; 
     align-items: center;
+    gap: 1rem;
     margin-right: 4rem;
+}
+
+.navRight a, .navLeft a {
+    font-family: 'Segoe UI Symbol', Arial, sans-serif; /* Sino se pone una font como esta, el icono no cambiara de color */
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;  
+}
+
+
+.navLeft {
+    margin-left: auto; 
+    display: flex;  
+    justify-content: flex-start; 
+    align-items: center;
+    gap: 1rem;
+    margin-left: 4rem;
 }
 
 .searchBox{
@@ -49,12 +67,13 @@ body::-webkit-scrollbar {
     border-radius: 20px;
     background-color: white;
     color: black;
+    line-height: 1rem;
     padding: 0.2rem;
 }
 
 .searchBox::placeholder{
-
-    padding-left: 1rem;
+    font-family: 'Segoe UI Symbol', Arial, sans-serif; /* Sino se pone una font como esta, el icono no cambiara de color */
+    line-height: 1rem;
     color: black;
     font-weight: bold;
 }
@@ -69,15 +88,15 @@ body::-webkit-scrollbar {
 .selectionContainer{
 
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 5rem;
 
 }
 
 .homeImg{
     margin-top: 1.5rem;
-    width: 600px;
-    height: 600px;
+    width: 35rem;
+    height: 35rem;
     border: 1px solid black;
 }
 
@@ -115,6 +134,59 @@ body::-webkit-scrollbar {
 #Woman button{
     background-image: url(https://images.unsplash.com/photo-1553984658-d17e19aa281a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fGZhc2hpb24lMjB3b21lbnxlbnwwfHwwfHx8MA%3D%3D);
 }
+
+.promo {
+    font-size: 3rem;
+    text-decoration: none;
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+    color: black;
+    padding: 4rem;
+    position: absolute; 
+    left: 50%; 
+    transform: translateX(-50%);
+}
+
+.homeProducts{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+}
+
+.homeProductsContainer{
+
+    display: grid;
+    grid-template-columns:repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 5rem;
+
+}
+
+.HP{
+    margin-top: 1.5rem;
+    width: 13rem;
+    height: 13rem;
+    border: 1px solid black;
+}
+
+.HP button{
+    display: flex;         
+    justify-content: center; 
+    align-items: flex-end;
+    padding: 2rem;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in;
+    
+}
+
+.HP button:hover{
+
+   transform: scale(1.02);
+}
+
 
 
 
