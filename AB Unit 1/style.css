@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+}
+
+html {
+    overflow: -moz-scrollbars-none; 
+    -ms-overflow-style: none; 
+}
+
+body::-webkit-scrollbar {
+    display: none; 
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem; 
+}
+
+.nav a {
+    text-decoration: none;
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+    font-size: 3.5rem;
+    font-style: normal;
+    color: black;
+}
+
+.nav .logo {
+    font-size: 3.5rem;
+    position: absolute; 
+    left: 50%; 
+    transform: translateX(-50%);
+}
+
+.navRight {
+    margin-left: auto; 
+    display: flex;  
+    justify-content: flex-end; 
+    align-items: center;
+    margin-right: 4rem;
+}
+
+.searchBox{
+
+    border: 3px solid black;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    padding: 0.2rem;
+}
+
+.searchBox::placeholder{
+
+    padding-left: 1rem;
+    color: black;
+    font-weight: bold;
+}
+
+.homeSelection{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.selectionContainer{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+
+}
+
+.homeImg{
+    margin-top: 1.5rem;
+    width: 600px;
+    height: 600px;
+    border: 1px solid black;
+}
+
+.homeImg button{
+    display: flex;         
+    justify-content: center; 
+    align-items: flex-end;
+    padding: 2rem;
+    background-position: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;  
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in;
+    
+}
+
+.homeImg button:hover{
+
+   transform: scale(1.02);
+}
+
+.homeImg a {
+
+    text-decoration: none;
+}
+
+#Man button{
+    background-image: url(https://images.unsplash.com/photo-1714758913374-88cce9493a25?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTYwfHxtZW4lMjBwb3Npbmd8ZW58MHx8MHx8fDA%3D);
+}
+
+#Woman button{
+    background-image: url(https://images.unsplash.com/photo-1553984658-d17e19aa281a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fGZhc2hpb24lMjB3b21lbnxlbnwwfHwwfHx8MA%3D%3D);
+}
+
+
+
+
+
+
