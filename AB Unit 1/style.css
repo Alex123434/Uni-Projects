@@ -57,7 +57,7 @@ body::-webkit-scrollbar {
     justify-content: flex-start; 
     align-items: center;
     gap: 1rem;
-    margin-left: 4rem;
+    margin-left: 0.7rem;
 }
 
 .searchBox{
@@ -88,14 +88,14 @@ body::-webkit-scrollbar {
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 5rem;
+    gap: 0.5rem;
 
 }
 
 .homeImg{
     margin-top: 1.5rem;
-    width: 35rem;
-    height: 35rem;
+    width: 45rem;
+    height: 37rem;
     border: 1px solid black;
 }
 
@@ -135,13 +135,13 @@ body::-webkit-scrollbar {
     background-image: url(https://images.unsplash.com/photo-1553984658-d17e19aa281a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fGZhc2hpb24lMjB3b21lbnxlbnwwfHwwfHx8MA%3D%3D);
 }
 
+
 .Title {
     font-size: 3rem;
     text-decoration: none;
     font-family: "Alata", sans-serif;
     font-weight: 400;
     color: black;
-    padding: 4rem;
     position: absolute; 
     left: 50%; 
     transform: translateX(-50%);
@@ -187,7 +187,7 @@ body::-webkit-scrollbar {
    transform: scale(1.02);
 }
 
-.ManCover{
+.PageCover{
 
     display: flex;
     justify-content: center;
@@ -199,10 +199,20 @@ body::-webkit-scrollbar {
     background-repeat: no-repeat;
     width: 100%;
     height: 20rem;
+
+}
+
+#ManCover{
+
     background-image: url(https://plus.unsplash.com/premium_photo-1706108824864-2b153aeeb5ed?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGdyb3VwJTIwb2YlMjBtZW58ZW58MHwwfDB8fHww);
 
 }
 
+#WomanCover{
+
+    background-image: url(https://images.unsplash.com/photo-1615332858674-7c78a52a5367?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDR8fGdyb3VwJTIwd29tZW58ZW58MHwwfDB8fHww);
+
+}
 .Products{
 
     display: flex;
@@ -237,7 +247,21 @@ body::-webkit-scrollbar {
     height: 100%;
     
 }
+.Products .ProductTag .Tag button {
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    background-color: black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
 
+  .Products .ProductTag .Tag a {
+    text-decoration: none; 
+  }
+  
+  
 .Tag button:hover{
 
    transform: scale(1.02);
