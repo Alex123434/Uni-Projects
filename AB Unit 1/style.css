@@ -1,5 +1,6 @@
 html, body {
     margin: 0;
+    font-family: 'Roboto', sans-serif;
     overflow: -moz-scrollbars-none; 
     -ms-overflow-style: none; 
     overflow-x: hidden;
@@ -88,14 +89,14 @@ body::-webkit-scrollbar {
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 0.5rem;
+    width: 100%;
 
 }
 
 .homeImg{
     margin-top: 1.5rem;
-    width: 45rem;
-    height: 37rem;
+    width: 100%;
+    height: 40rem;
     border: 1px solid black;
 }
 
@@ -158,17 +159,17 @@ body::-webkit-scrollbar {
 .ProductsContainer{
 
     display: grid;
-    grid-template-columns:repeat(5, 1fr);
+    grid-template-columns:repeat(3, 1fr);
     grid-template-rows: repeat(5, 1fr);
     gap: 5rem;
 
 }
 
 .Product{
+    display: flex;
+    flex-direction: column;
     margin-top: 0.2rem;
-    width: 13rem;
-    height: 13rem;
-    border: 1px solid black;
+    
 }
 
 .Product button{
@@ -176,8 +177,9 @@ body::-webkit-scrollbar {
     justify-content: center; 
     align-items: flex-end;
     padding: 2rem;
-    width: 100%;
-    height: 100%;
+    width: 20rem;
+    height: 25rem;
+    border: 1px solid black;
     transition: transform 0.5s ease-in;
     
 }
@@ -267,8 +269,60 @@ body::-webkit-scrollbar {
    transform: scale(1.02);
 }
 
+.Product p {
+    margin: 0; 
+    margin-top: 0.5rem;
+  }
 
+  .Price{
+
+    font-weight: bold;
+  }
   
+  .Footer{
+
+    display: flex;
+    align-items: center;
+    margin-top: 10rem;
+    background-color: black;
+    width: 100%;
+    height: 25rem;
+}
+
+.Footer a, .FooterLeft p, .FooterMiddle p{
+
+    color: white;
+    text-decoration: none;
+}
+
+.FooterLeft p{
+
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.FooterLeft a:hover{
+    text-decoration: underline;
+}
+
+.FooterLeft a, .FooterLeft p{
+    margin-left: auto; 
+    display: flex;  
+    justify-items: center;
+    gap: 1rem;
+    margin-left: 5rem;
+    margin-top: 1rem;
+    
+}
+
+.FooterMiddle p {
+    font-size: 1.5rem;
+    position: absolute; 
+    left: 50%; 
+    transform: translateX(-50%);
+}
+  
+
 
 
 
