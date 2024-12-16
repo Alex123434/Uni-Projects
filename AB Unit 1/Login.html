@@ -26,16 +26,37 @@
   <body class="AccountLogSig">
     <div class="AccContainer">
       <div class="ContainerSelection">
-        <div class="AccBtn">
-          <p>Nove</p>
-        </div>
-        <hr />
-        <div class="AccBtn" id="AccTitle">
-          <a href="Login.html"><button>Log in</button></a>
-        </div>
-        <div class="AccBtn">
-          <a href="SignUp.html"><button>Sign up</button></a>
-        </div>
+        <form action="/Login" method="POST">
+          <h2>Login</h2>
+
+          <div class="InputGroup" id="SignUpEmail">
+            <label for="username">Username or Email</label>
+            <input
+              type="text"
+              class="InputBox"
+              id="username"
+              name="username"
+              placeholder="Enter your username or email"
+              required
+            />
+          </div>
+
+          <div class="InputGroup">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              class="InputBox"
+              id="password"
+              name="password"
+              placeholder="Enter your password"
+              required
+            />
+          </div>
+
+          <div class="FormActions">
+            <button type="submit" class="SignUpBtn">Login</button>
+          </div>
+        </form>
         <div class="AccBtn" class="AccBack">
           <a href="Home.html"><button>Back to home</button></a>
         </div>

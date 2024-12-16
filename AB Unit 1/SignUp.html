@@ -26,10 +26,10 @@
   <body class="AccountLogSig">
     <div class="AccContainer">
       <div class="ContainerSelection">
-        <form action="/Signup" method="POST" class="SignUp">
+        <form action="/Signup" method="POST">
           <h2>Sign Up</h2>
 
-          <div class="InputGroup">
+          <div class="InputGroup" id="SignUpEmail">
             <label for="username">Username or Email</label>
             <input
               type="text"
@@ -54,10 +54,12 @@
           </div>
 
           <div class="FormActions">
-            <button type="submit" class="submit-btn">Sign Up</button>
+            <button type="submit" class="SignUpBtn">Sign Up</button>
           </div>
         </form>
-        <a href="Home.html" id="BackBtn"><button>Back to home</button></a>
+        <div class="AccBtn" class="AccBack">
+          <a href="Home.html"><button>Back to home</button></a>
+        </div>
       </div>
     </div>
   </body>

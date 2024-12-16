@@ -174,19 +174,39 @@ body::-webkit-scrollbar {
     
 }
 
-.Product button{
+.Product img{
     display: flex;         
     justify-content: center; 
     align-items: flex-end;
-    padding: 2rem;
+    background-position: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 20rem;
-    height: 25rem;
-    border: 1px solid black;
+    height: 27rem;
+    border: 1px solid #f0f0f0;
     transition: transform 0.5s ease-in;
     
 }
 
-.Product button:hover{
+.Product button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    width: 10rem;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 20px;
+    color:  white;
+    font-family: 'Roboto', sans-serif;
+    background-color: black;;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.2s;
+
+
+}
+
+.Product img:hover{
 
    transform: scale(1.02);
 }
@@ -362,7 +382,7 @@ body::-webkit-scrollbar {
     transform: scale(1.05);
 }
 
-#AccBack {
+.AccBack {
     bottom: 1rem; 
     right: 1rem; 
 }
@@ -419,7 +439,7 @@ form .InputGroup{
 
 }
 
-.FormActions button{
+.SignUpBtn{
 
     width: 10rem;
     cursor: pointer;
@@ -431,6 +451,11 @@ form .InputGroup{
     text-align: center;
     transition: background-color 0.3s, transform 0.2s;
 
+}
+
+.SignUpBtn:hover {
+    background-color: #333;
+    transform: scale(1.05);
 }
 
 label{
@@ -441,18 +466,9 @@ label{
     padding: 1rem;
 }
 
-#BackBtn{
-    width: 10rem;
-    cursor: pointer;
-    border: 2px solid black;
-    border-radius: 20px;
-    color:  white;
-    font-family: 'Roboto', sans-serif;
-    background-color: black;;
-    text-align: center;
-    transition: background-color 0.3s, transform 0.2s;
 
+#SignUpEmail{
+
+    width: 20rem;
 }
-
-
 
