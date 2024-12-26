@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="https://raw.githubusercontent.com/Alex123434/Uni-Projects/master/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>Man | Nove</title>
+  </head>
+  <body>
+    <div class="containerIntro">
+      <nav class="nav">
+        <div class="navLeft">
+          <a href="{{ url_for('Home') }}"> &#x1F3E0;</a>
+          <a href="{{ url_for('LogSignAcc') }}">&#x1F464;</a>
+        </div>
+        <a href="{{ url_for('Home') }}" class="logo">Nove</a>
+        <div class="navRight">
+          <input type="text" class="searchBox" placeholder="&#x1F50D; Search" />
+          <a href="{{ url_for('ShoppingCart') }}">&#x1F6D2;</a>
+        </div>
+      </nav>
+    </div>
+
+    <div class="PageCover">
+      <video class="CoverVideo" autoplay muted loop>
+        <source
+          src="https://videos.pexels.com/video-files/5544312/5544312-hd_1920_1080_24fps.mp4"
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <p class="Title">Hoodies</p>
+
+    <div class="Products">
+      <div class="ProductTag">
+        <div class="Tag">
+          <a href="{{ url_for('Man') }}"><button>Bestseller</button></a>
+        </div>
+        <div class="Tag">
+          <a href="{{ url_for('TrousersMan') }}"><button>Trousers</button></a>
+        </div>
+        <div class="Tag">
+          <a href="{{ url_for('TShirtsMan') }}"><button>T-Shirts</button></a>
+        </div>
+        <div class="Tag">
+          <a href="{{ url_for('SneakersMan') }}"><button>Sneakers</button></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="Products">
+      <div class="ProductsContainer">
+        <div class="Product">
+          <img
+            src="https://static.pullandbear.net/assets/public/52b6/fab2/dbf2464f9757/8739dbd03926/07591513807-M/07591513807-M.jpg?ts=1723208094724&w=580&f=auto"
+            alt="Product Image"
+          />
+          <p>Dark Grey Hoodie</p>
+          <p class="Price">22.99 €</p>
+          <button>Buy</button>
+        </div>
+        <div class="Product">
+          <img
+            src="https://static.pullandbear.net/assets/public/5e7a/e0be/2b3847fb8bde/600fa1da673f/07590511800-M/07590511800-M.jpg?ts=1724661071382&w=580&f=auto"
+            alt="Product Image"
+          />
+          <p>Boxy Black Sweater</p>
+          <p class="Price">19.99 €</p>
+          <button>Buy</button>
+        </div>
+        <div class="Product">
+          <img
+            src="https://static.pullandbear.net/assets/public/7c6a/59c8/db3f4a378883/c081579b6cb7/07590501251-M/07590501251-M.jpg?ts=1722598019282&w=580&f=auto"
+            alt="Product Image"
+          />
+          <p>Zip Up White Hoodie</p>
+          <p class="Price">22.99 €</p>
+          <button>Buy</button>
+        </div>
+        <div class="Product">
+          <img
+            src="https://static.pullandbear.net/assets/public/7fb1/56ac/878c4bc0af25/4e1f7027ce69/07590511716-M/07590511716-M.jpg?ts=1724661037898&w=580&f=auto"
+            alt="Product Image"
+          />
+          <p>Brown Boxy Sweater</p>
+          <p class="Price">19.99 €</p>
+          <button>Buy</button>
+        </div>
+        <div class="Product">
+          <img
+            src="https://static.pullandbear.net/assets/public/a222/458b/39da40a78e3a/86ed68859b90/07590511251-M/07590511251-M.jpg?ts=1724661024650&w=580&f=auto "
+            alt="Product Image"
+          />
+          <p>Boxy White Sweater</p>
+          <p class="Price">19.99 €</p>
+          <button>Buy</button>
+        </div>
+        <div class="Product">
+          <img
+            src="https://static.pullandbear.net/assets/public/d9b5/ab7b/aeb54ddeab1c/8c84f7ca7886/07591513501-M/07591513501-M.jpg?ts=1723546800389&w=580&f=auto"
+            alt="Product Image"
+          />
+          <p>Bottle Green Hoodie</p>
+          <p class="Price">22.99 €</p>
+          <button>Buy</button>
+        </div>
+        <div class="Product">
+          <img
+            src="https://static.pullandbear.net/assets/public/abb3/3507/f672446abeba/a8e7726804b9/07591513401-M/07591513401-M.jpg?ts=1723546809752&w=580&f=auto"
+            alt="Product Image"
+          />
+          <p>Dark Blue Hoodie</p>
+          <p class="Price">22.99 €</p>
+          <button>Buy</button>
+        </div>
+        <div class="Product">
+          <img
+            src="https://static.pullandbear.net/assets/public/6631/c24d/d9cf44fc8456/3bf646892d4e/07590501501-M/07590501501-M.jpg?ts=1722846894281&w=580&f=auto"
+            alt="Product Image"
+          />
+          <p>Zip Up Hoodie</p>
+          <p class="Price">22.99 €</p>
+          <button>Buy</button>
+        </div>
+        <div class="Product">
+          <img
+            src="https://static.pullandbear.net/assets/public/a8ad/5e1d/6686413ab84b/6f70612d8983/07590500807-M/07590500807-M.jpg?ts=1724747956179&w=580&f=auto"
+            alt="Product Image"
+          />
+          <p>Zip Hoodie</p>
+          <p class="Price">24.99 €</p>
+          <button>Buy</button>
+        </div>
+        <div class="Product">
+          <img
+            src="https://static.pullandbear.net/assets/public/dd30/9260/ee374c8dad75/068b84556161/07590547800-M/07590547800-M.jpg?ts=1723624219703&w=580&f=auto"
+            alt="Product Image"
+          />
+          <p>Black Japanese Hoodie</p>
+          <p class="Price">29.99 €</p>
+          <button>Buy</button>
+        </div>
+        <div class="Product">
+          <img
+            src="https://static.pullandbear.net/assets/public/cbd9/df65/f8f64669a5b1/7c17b2267a98/03598599400-M/03598599400-M.jpg?ts=1733395623357&w=580&f=auto"
+            alt="Product Image"
+          />
+          <p>Blue Grafic Hoodie</p>
+          <p class="Price">29.99 €</p>
+          <button>Buy</button>
+        </div>
+        <div class="Product">
+          <img
+            src="https://static.pullandbear.net/assets/public/4586/7db6/61184bd79f29/4ce4779c9e09/07591542922-M/07591542922-M.jpg?ts=1730105408955&w=580&f=auto"
+            alt="Product Image"
+          />
+          <p>Agitated Sweater</p>
+          <p class="Price">34.99 €</p>
+          <button>Buy</button>
+        </div>
+        <div class="Product">
+          <img
+            src="https://static.pullandbear.net/assets/public/f0c6/ef24/fa7b48979ff6/4f8366f425a0/07590558809-M/07590558809-M.jpg?ts=1726760213200&w=580&f=auto"
+            alt="Product Image"
+          />
+          <p>Textured Zip Up Sweater</p>
+          <p class="Price">29.99 €</p>
+          <button>Buy</button>
+        </div>
+        <div class="Product">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3OGiunITYztmptjmi4XDrD1ZCozsFmraCRLGzsI3oBxZAJkWzoO5fylmz0-lyKreSfp4&usqp=CAU"
+            alt="Product Image"
+          />
+          <p>Currently not available</p>
+        </div>
+        <div class="Product">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3OGiunITYztmptjmi4XDrD1ZCozsFmraCRLGzsI3oBxZAJkWzoO5fylmz0-lyKreSfp4&usqp=CAU"
+            alt="Product Image"
+          />
+          <p>Currently not available</p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="Footer">
+        <div class="FooterContainer">
+          <div class="FooterLeft">
+            <p>Content</p>
+            <a href="{{ url_for('About') }}">About</a>
+            <a href="{{ url_for('Man') }}">Man</a>
+            <a href="{{ url_for('Woman') }}">Woman</a>
+            <p>Contact</p>
+            <a href="mailto:info@nove.com">info@nove.com</a>
+          </div>
+          <div class="FooterMiddle">
+            <p>&copy; 2024 Nove. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

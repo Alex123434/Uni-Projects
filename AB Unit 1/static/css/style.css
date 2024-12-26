@@ -472,3 +472,26 @@ label{
     width: 20rem;
 }
 
+.OuterCart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+}
+
+.InnerCart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    width: 50%;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 20px;
+    position: relative; 
+}
+
+.CartTitle span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

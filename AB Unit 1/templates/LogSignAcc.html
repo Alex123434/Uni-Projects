@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -31,13 +35,13 @@
         </div>
         <hr />
         <div class="AccBtn" id="AccTitle">
-          <a href="Login.html"><button>Log in</button></a>
+          <a href="{{ url_for('Login') }}"><button>Log in</button></a>
         </div>
         <div class="AccBtn">
-          <a href="SignUp.html"><button>Sign up</button></a>
+          <a href="{{ url_for('SignUp') }}"><button>Sign up</button></a>
         </div>
         <div class="AccBtn" class="AccBack">
-          <a href="Home.html"><button>Back to home</button></a>
+          <a href="{{ url_for('Home') }}"><button>Back to home</button></a>
         </div>
       </div>
     </div>

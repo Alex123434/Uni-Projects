@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="https://raw.githubusercontent.com/Alex123434/Uni-Projects/master/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>Man | Nove</title>
+  </head>
+  <body>
+    <div class="containerIntro">
+      <nav class="nav">
+        <div class="navLeft">
+          <a href="{{ url_for('Home') }}"> &#x1F3E0;</a>
+          <a href="{{ url_for('LogSignAcc') }}">&#x1F464;</a>
+        </div>
+        <a href="{{ url_for('Home') }}" class="logo">Nove</a>
+        <div class="navRight">
+          <input type="text" class="searchBox" placeholder="&#x1F50D; Search" />
+          <a href="{{ url_for('ShoppingCart') }}">&#x1F6D2;</a>
+        </div>
+      </nav>
+    </div>
+
+    <div class="PageCover">
+      <video class="CoverVideo" autoplay muted loop>
+        <source
+          src="https://videos.pexels.com/video-files/10477313/10477313-uhd_2732_1440_25fps.mp4"
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <p class="Title">Trousers</p>
+
+    <div class="Products">
+      <div class="ProductTag">
+        <div class="Tag">
+          <a href="{{ url_for('Man') }}"><button>Bestseller</button></a>
+        </div>
+        <div class="Tag">
+          <a href="{{ url_for('HoodieMan') }}"><button>Hoodies</button></a>
+        </div>
+        <div class="Tag">
+          <a href="{{ url_for('TShirtsMan') }}"><button>T-Shirts</button></a>
+        </div>
+        <div class="Tag">
+          <a href="{{ url_for('SneakersMan') }}"><button>Sneakers</button></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="Products">
+      <div class="ProductsContainer">
+        <div class="Product">
+          <img
+            src="https://static.pullandbear.net/assets/public/27fd/72b3/944540d8a9c3/2a2b680bf0d0/07679501807-M/07679501807-M.jpg?ts=1726483077322&w=580&f=auto"
+            alt="Product Image"
+          />
+          <p>Baggy Track-suit Trousers</p>
+          <p class="Price">22.99 €</p>
+          <button>Buy</button>
+        </div>
+        <div class="Product">
+          <img
+            src="https://static.pullandbear.net/assets/public/242f/4250/4f744543b0b8/9a873cb09bb1/07685526802-M/07685526802-M.jpg?ts=1723189263518&w=580&f=auto"
+            alt="Product Image"
+          />
+          <p>Baggy Jeans</p>
+          <p class="Price">29.99 €</p>
+          <button>Buy</button>
+        </div>
+        <div class="Product">
+          <img
+            src="https://static.pullandbear.net/2/photos//2024/I/0/2/p/7678/502/800/7678502800_4_1_0.jpg?imwidth=%3Awidth%3A&ts=1718356993346&w=580&f=auto"
+            alt="Product Image"
+          />
+          <p>Cargo Joggers</p>
+          <p class="Price">24.99 €</p>
+          <button>Buy</button>
+        </div>
+        <div class="Product">
+          <img
+            src="https://static.pullandbear.net/assets/public/a636/8c27/f74a4030a671/a9e3e1b2d6c6/07685511407-M/07685511407-M.jpg?ts=1721839385132&w=580&f=auto"
+            alt="Product Image"
+          />
+          <p>Standard Jeans</p>
+          <p class="Price">25.99 €</p>
+          <button>Buy</button>
+        </div>
+        <div class="Product">
+          <img
+            src="https://static.pullandbear.net/assets/public/5fa0/8431/180a404db562/81bcb8e11117/07678507800-M/07678507800-M.jpg?ts=1722520722741&w=580&f=auto"
+            alt="Product Image"
+          />
+          <p>Wide Leg Jeans</p>
+          <p class="Price">24.99 €</p>
+          <button>Buy</button>
+        </div>
+        <div class="Product">
+          <img
+            src="https://static.pullandbear.net/assets/public/f7ee/e9f1/b7a54adcb0f1/d738b8772f1f/03680502710-M/03680502710-M.jpg?ts=1732116581447&w=580&f=auto"
+            alt="Product Image"
+          />
+          <p>Pana Baggy Jeans</p>
+          <p class="Price">19.99 €</p>
+          <button>Buy</button>
+        </div>
+        <div class="Product">
+          <img
+            src="https://static.pullandbear.net/assets/public/2392/75c5/55f44607a8d1/c0944a0bcb41/07685503427-M/07685503427-M.jpg?ts=1723208242367&w=580&f=auto"
+            alt="Product Image"
+          />
+          <p>Slim Fit Jeans</p>
+          <p class="Price">25.99 €</p>
+          <button>Buy</button>
+        </div>
+        <div class="Product">
+          <img
+            src="https://static.pullandbear.net/assets/public/73b4/1174/4d86493f8028/d05a8066873c/07678528506-M/07678528506-M.jpg?ts=1729259540901&w=580&f=auto"
+            alt="Product Image"
+          />
+          <p>Premium Cargo Joggers</p>
+          <p class="Price">34.99 €</p>
+          <button>Buy</button>
+        </div>
+        <div class="Product">
+          <img
+            src="https://static.pullandbear.net/assets/public/1f38/db04/9b194456bc72/76ccf7d26d8c/07685507427-M/07685507427-M.jpg?ts=1722951659917&w=580&f=auto"
+            alt="Product Image"
+          />
+          <p>Carrot Jeans</p>
+          <p class="Price">19.99 €</p>
+          <button>Buy</button>
+        </div>
+        <div class="Product">
+          <img
+            src="https://static.pullandbear.net/assets/public/adf9/3a60/0f2c4cbeaa5f/39985e2eb6ea/03680516802-M/03680516802-M.jpg?ts=1732889456739&w=580&f=auto"
+            alt="Product Image"
+          />
+          <p>Track-suit Interlock</p>
+          <p class="Price">17.99 €</p>
+          <button>Buy</button>
+        </div>
+        <div class="Product">
+          <img
+            src="https://static.pullandbear.net/assets/public/28c0/40f0/fd314915b977/b9c098072c77/07678534802-M/07678534802-M.jpg?ts=1731921990323&w=580&f=auto"
+            alt="Product Image"
+          />
+          <p>Slouchy Trousers</p>
+          <p class="Price">39.99 €</p>
+          <button>Buy</button>
+        </div>
+        <div class="Product">
+          <img
+            src="https://static.pullandbear.net/assets/public/74be/81e1/28a845cf826a/03a4ded6c229/03680900085-M/03680900085-M.jpg?ts=1732116629721&w=580&f=auto"
+            alt="Product Image"
+          />
+          <p>Balloon Trousers</p>
+          <p class="Price">29.99 €</p>
+          <button>Buy</button>
+        </div>
+        <div class="Product">
+          <img
+            src="https://static.pullandbear.net/assets/public/8be3/3cdd/8de5403881b7/775b8cfc7a80/07685525427-M/07685525427-M.jpg?ts=1723449275473&w=580&f=auto"
+            alt="Product Image"
+          />
+          <p>Loose Fit Jeans</p>
+          <p class="Price">29.99 €</p>
+          <button>Buy</button>
+        </div>
+        <div class="Product">
+          <img
+            src="https://static.pullandbear.net/assets/public/f552/c7fc/86b04e40a5cb/9b6595ce17e4/07678529708-M/07678529708-M.jpg?ts=1731920079024&w=580&f=auto"
+            alt="Product Image"
+          />
+          <p>Pana Cargo Trousers</p>
+          <p class="Price">9.99 €</p>
+          <button>Buy</button>
+        </div>
+        <div class="Product">
+          <img
+            src="https://static.pullandbear.net/2/photos//2024/I/0/2/p/7678/501/800/7678501800_4_1_0.jpg?imwidth=%3Awidth%3A&ts=1717408681722&w=580&f=auto"
+            alt="Product Image"
+          />
+          <p>Joggers with Pockets</p>
+          <p class="Price">24.99 €</p>
+          <button>Buy</button>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="Footer">
+        <div class="FooterContainer">
+          <div class="FooterLeft">
+            <p>Content</p>
+            <a href="{{ url_for('About') }}">About</a>
+            <a href="{{ url_for('Man') }}">Man</a>
+            <a href="{{ url_for('Woman') }}">Woman</a>
+            <p>Contact</p>
+            <a href="mailto:info@nove.com">info@nove.com</a>
+          </div>
+          <div class="FooterMiddle">
+            <p>&copy; 2024 Nove. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

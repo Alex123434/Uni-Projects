@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="https://raw.githubusercontent.com/Alex123434/Uni-Projects/master/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>Man | Nove</title>
+  </head>
+  <body>
+    <div class="containerIntro">
+      <nav class="nav">
+        <div class="navLeft">
+          <a href="{{ url_for('Home') }}"> &#x1F3E0;</a>
+          <a href="{{ url_for('LogSignAcc') }}">&#x1F464;</a>
+        </div>
+        <a href="{{ url_for('Home') }}" class="logo">Nove</a>
+        <div class="navRight">
+          <input type="text" class="searchBox" placeholder="&#x1F50D; Search" />
+          <a href="{{ url_for('ShoppingCart') }}">&#x1F6D2;</a>
+        </div>
+      </nav>
+    </div>
+
+    <div class="PageCover">
+      <video class="CoverVideo" autoplay muted loop>
+        <source
+          src="https://videos.pexels.com/video-files/2795749/2795749-uhd_2560_1440_25fps.mp4"
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <p class="Title">T-Shirts</p>
+
+    <div class="Products">
+      <div class="ProductTag">
+        <div class="Tag">
+          <a href="{{ url_for('Man') }}"><button>Bestseller</button></a>
+        </div>
+        <div class="Tag">
+          <a href="{{ url_for('HoodieMan') }}"><button>Hoodies</button></a>
+        </div>
+        <div class="Tag">
+          <a href="{{ url_for('TrousersMan') }}"><button>Trousers</button></a>
+        </div>
+        <div class="Tag">
+          <a href="{{ url_for('SneakersMan') }}"><button>Sneakers</button></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="Products">
+      <div class="ProductsContainer">
+        <div class="Product">
+          <img
+            src="https://static.pullandbear.net/assets/public/8cc5/e106/bd92483baa65/680eecb63317/03245510700-M/03245510700-M.jpg?ts=1730223007884&w=580&f=auto"
+            alt="Product Image"
+          />
+          <p>Sport Tee</p>
+          <p class="Price">39.99 €</p>
+          <button>Buy</button>
+        </div>
+        <div class="Product">
+          <img
+            src="https://static.pullandbear.net/assets/public/6e36/05a2/d6a242b8aae4/b97188bc3def/07249544500-A6M/07249544500-A6M.jpg?ts=1719504966247&w=580&f=auto"
+            alt="Product Image"
+          />
+          <p>Green Tee</p>
+          <p class="Price">19.99 €</p>
+          <button>Buy</button>
+        </div>
+        <div class="Product">
+          <img
+            src="https://static.pullandbear.net/assets/public/ad67/1def/c9534e42ac60/d2e87b995afd/03243583251-A20M/03243583251-A20M.jpg?ts=1720714040574&w=580&f=auto"
+            alt="Product Image"
+          />
+          <p>Honda Tee</p>
+          <p class="Price">19.99 €</p>
+          <button>Buy</button>
+        </div>
+        <div class="Product">
+          <img
+            src="https://static.pullandbear.net/assets/public/d627/24f1/51b949d9acfb/2725aa68228e/03245526800-M/03245526800-M.jpg?ts=1731929417641&w=580&f=auto"
+            alt="Product Image"
+          />
+          <p>Scarface Tee</p>
+          <p class="Price">37.99 €</p>
+          <button>Buy</button>
+        </div>
+        <div class="Product">
+          <img
+            src="https://static.pullandbear.net/assets/public/353c/cfd9/513747f69d31/b990e4bb00a3/03243924807-A2M/03243924807-A2M.jpg?ts=1721652998895&w=580&f=auto"
+            alt="Product Image"
+          />
+          <p>Nirvana Tee</p>
+          <p class="Price">29.99 €</p>
+          <button>Buy</button>
+        </div>
+        <div class="Product">
+          <img
+            src="https://static.pullandbear.net/assets/public/c17c/986d/a7cd46118bb8/43d0627386ed/03243594500-A2M/03243594500-A2M.jpg?ts=1722507976314&w=580&f=auto"
+            alt="Product Image"
+          />
+          <p>Jeep Tee</p>
+          <p class="Price">19.99 €</p>
+          <button>Buy</button>
+        </div>
+        <div class="Product">
+          <img
+            src="https://static.pullandbear.net/assets/public/86f8/fe2c/8f1a436c8fff/1935a997a3c0/03245916251-M/03245916251-M.jpg?ts=1734085098608&w=580&f=auto"
+            alt="Product Image"
+          />
+          <p>White Tee</p>
+          <p class="Price">19.99 €</p>
+          <button>Buy</button>
+        </div>
+        <div class="Product">
+          <img
+            src="https://static.pullandbear.net/assets/public/8f5b/3c15/73bd41c6a1b5/d4bc21c753f5/03245525800-M/03245525800-M.jpg?ts=1732530031276&w=580&f=auto"
+            alt="Product Image"
+          />
+          <p>21 Savage Tee</p>
+          <p class="Price">39.99 €</p>
+          <button>Buy</button>
+        </div>
+        <div class="Product">
+          <img
+            src="https://static.pullandbear.net/assets/public/5729/651c/ff2a40199cb8/f6bc10a5b198/03243575802-A2M/03243575802-A2M.jpg?ts=1721639501408&w=580&f=auto"
+            alt="Product Image"
+          />
+          <p>Graphic Tee</p>
+          <p class="Price">19.99 €</p>
+          <button>Buy</button>
+        </div>
+        <div class="Product">
+          <img
+            src="https://static.pullandbear.net/assets/public/56ad/25f9/3fd447458194/94011b521ed8/07249570251-M/07249570251-M.jpg?ts=1722597974926&w=580&f=auto"
+            alt="Product Image"
+          />
+          <p>Beige Tee</p>
+          <p class="Price">17.99 €</p>
+          <button>Buy</button>
+        </div>
+        <div class="Product">
+          <img
+            src="https://static.pullandbear.net/2/photos//2024/V/0/2/p/7245/530/611/7245530611_4_1_0.jpg?imwidth=%3Awidth%3A&ts=1708945012596&w=580&f=auto"
+            alt="Product Image"
+          />
+          <p>Oversized Pink Tee</p>
+          <p class="Price">20.99 €</p>
+          <button>Buy</button>
+        </div>
+        <div class="Product">
+          <img
+            src="https://static.pullandbear.net/assets/public/1078/9e52/a6c64baaa659/a5101c799715/03243526800-A1M/03243526800-A1M.jpg?ts=1721049737674&w=580&f=auto"
+            alt="Product Image"
+          />
+          <p>Ford Mustang Graphic Tee</p>
+          <p class="Price">29.99 €</p>
+          <button>Buy</button>
+        </div>
+        <div class="Product">
+          <img
+            src="https://static.pullandbear.net/assets/public/2c90/6a28/c0874463bb63/69fd4d355a65/07248923501-M/07248923501-M.jpg?ts=1728290760785&w=580&f=auto"
+            alt="Product Image"
+          />
+          <p>Basic Green Tee</p>
+          <p class="Price">9.99 €</p>
+          <button>Buy</button>
+        </div>
+        <div class="Product">
+          <img
+            src="https://static.pullandbear.net/assets/public/b08c/d92e/1cf64314a75d/5344591c6280/07248923800-M/07248923800-M.jpg?ts=1728290783061&w=580&f=auto"
+            alt="Product Image"
+          />
+          <p>Black Tee</p>
+          <p class="Price">19.99 €</p>
+          <button>Buy</button>
+        </div>
+        <div class="Product">
+          <img
+            src="https://static.pullandbear.net/assets/public/4e1e/3089/e41b490884c5/c184e63efcde/07248549802-A2M/07248549802-A2M.jpg?ts=1721858394281&w=580&f=auto"
+            alt="Product Image"
+          />
+          <p>AC-DC Graphic Tee</p>
+          <p class="Price">39.99 €</p>
+          <button>Buy</button>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="Footer">
+        <div class="FooterContainer">
+          <div class="FooterLeft">
+            <p>Content</p>
+            <a href="{{ url_for('About') }}">About</a>
+            <a href="{{ url_for('Man') }}">Man</a>
+            <a href="{{ url_for('Woman') }}">Woman</a>
+            <p>Contact</p>
+            <a href="mailto:info@nove.com">info@nove.com</a>
+          </div>
+          <div class="FooterMiddle">
+            <p>&copy; 2024 Nove. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
