@@ -45,7 +45,7 @@
     <div class="PageCover">
       <video class="CoverVideo" autoplay muted loop>
         <source
-          src="https://videos.pexels.com/video-files/8431622/8431622-sd_960_506_25fps.mp4"
+          src="https://videos.pexels.com/video-files/4727641/4727641-uhd_2560_1440_25fps.mp4"
           type="video/mp4"
         />
         Your browser does not support the video tag.
@@ -57,16 +57,16 @@
     <div class="Products">
       <div class="ProductTag">
         <div class="Tag">
-          <a href="HoodiesWoman"><button>Hoodies</button></a>
+          <a href="{{ url_for('Woman') }}"><button>Bestseller</button></a>
         </div>
         <div class="Tag">
-          <a href="JeansWoman"><button>Jeans</button></a>
+          <a href="{{ url_for('TrousersWoman') }}"><button>Trousers</button></a>
         </div>
         <div class="Tag">
-          <a href="DressesWoman"><button>Dresses</button></a>
+          <a href="{{ url_for('DressesWoman') }}"><button>Dresses</button></a>
         </div>
         <div class="Tag">
-          <a href="SneakersWoman"><button>Sneakers</button></a>
+          <a href="{{ url_for('HoodieWoman') }}"><button>Hoodies</button></a>
         </div>
       </div>
     </div>
@@ -74,20 +74,137 @@
     <div class="Products">
       <div class="ProductsContainer">
         <div class="Product">
-          <img src="image1.jpg" alt="Product Image" />
-          <p>Item 1</p>
-          <p class="Price">27.99 €</p>
+          <img
+            src="https://static.pullandbear.net/assets/public/1767/f42a/dfb44e05b7c3/6c4d4db196d4/11326440001-m/11326440001-m.jpg?ts=1721052231418&w=580&f=auto"
+            alt="Product Image"
+          />
+          <p>Retro Sneakers</p>
+          <p class="Price">25.99 €</p>
           <button>Buy</button>
         </div>
         <div class="Product">
-          <img src="image2.jpg" alt="Product Image" />
-          <p>Item 2</p>
+          <img
+            src="https://static.pullandbear.net/assets/public/c13e/2782/aaf142ab80e8/c2e1397a5c7e/11314440001-m/11314440001-m.jpg?ts=1722420817772&w=580&f=auto"
+            alt="Product Image"
+          />
+          <p>White Sneakers</p>
+          <p class="Price">14.99 €</p>
+          <button>Buy</button>
+        </div>
+        <div class="Product">
+          <img
+            src="https://static.pullandbear.net/assets/public/e1a3/056e/8c7f4e7d8667/6afa15dfa417/11309440001-m/11309440001-m.jpg?ts=1722938314955&w=580&f=auto"
+            alt="Product Image"
+          />
+          <p>Volume Retro Sneakers</p>
           <p class="Price">29.99 €</p>
           <button>Buy</button>
         </div>
         <div class="Product">
-          <img src="image3.jpg" alt="Product Image" />
-          <p>Item 3</p>
+          <img
+            src="https://static.pullandbear.net/assets/public/917e/5d0d/bc974c2184f7/94f7a22b11ed/11315440004-m/11315440004-m.jpg?ts=1721314020440&w=580&f=auto"
+            alt="Product Image"
+          />
+          <p>Grey Sneakers</p>
+          <p class="Price">24.99 €</p>
+          <button>Buy</button>
+        </div>
+        <div class="Product">
+          <img
+            src="https://static.pullandbear.net/assets/public/265c/0472/02184f3a968d/da54958824ac/11308440009-m/11308440009-m.jpg?ts=1724770145296&w=580&f=auto"
+            alt="Product Image"
+          />
+          <p>Skater Sneakers</p>
+          <p class="Price">25.99 €</p>
+          <button>Buy</button>
+        </div>
+        <div class="Product">
+          <img
+            src="https://static.pullandbear.net/assets/public/fb4e/d55d/4fd2471c9a85/e7d6a1202789/11312440001-a1m/11312440001-a1m.jpg?ts=1723038598130&w=580&f=auto"
+            alt="Product Image"
+          />
+          <p>Retro Sneakers</p>
+          <p class="Price">19.99 €</p>
+          <button>Buy</button>
+        </div>
+        <div class="Product">
+          <img
+            src="https://static.pullandbear.net/2/photos//2024/V/1/1/p/1321/340/002/1321340002_4_1_0.jpg?imwidth=%3Awidth%3A&ts=1709737928041&w=580&f=auto"
+            alt="Product Image"
+          />
+          <p>Muti-piece Sneakers</p>
+          <p class="Price">20.99 €</p>
+          <button>Buy</button>
+        </div>
+        <div class="Product">
+          <img
+            src="https://static.pullandbear.net/assets/public/c4a7/28ba/b94a49a0a0ac/585dea324cc5/11308440023-m/11308440023-m.jpg?ts=1724770150594&w=580&f=auto"
+            alt="Product Image"
+          />
+          <p>Leather Sneakers</p>
+          <p class="Price">39.99 €</p>
+          <button>Buy</button>
+        </div>
+        <div class="Product">
+          <img
+            src="https://static.pullandbear.net/assets/public/902a/6dd5/1a874d16aa6e/4df2f8fed29a/11346440004-m/11346440004-m.jpg?ts=1724925447572&w=580&f=auto"
+            alt="Product Image"
+          />
+          <p>Sport Sneakers</p>
+          <p class="Price">39.99 €</p>
+          <button>Buy</button>
+        </div>
+        <div class="Product">
+          <img
+            src="https://static.pullandbear.net/assets/public/c309/176a/98f54fafae6f/d1c86505a844/11302440001-m/11302440001-m.jpg?ts=1731059930429&w=580&f=auto"
+            alt="Product Image"
+          />
+          <p>Multi-pieces Retro Sneakers</p>
+          <p class="Price">29.99 €</p>
+          <button>Buy</button>
+        </div>
+        <div class="Product">
+          <img
+            src="https://static.pullandbear.net/assets/public/425a/255f/bea6456fac38/be038bc0f614/11324440201-m/11324440201-m.jpg?ts=1720609219165&w=580&f=auto"
+            alt="Product Image"
+          />
+          <p>Animal Print Sneakers</p>
+          <p class="Price">37.99 €</p>
+          <button>Buy</button>
+        </div>
+        <div class="Product">
+          <img
+            src="https://static.pullandbear.net/2/photos//2024/V/1/1/p/1318/340/030/1318340030_4_1_0.jpg?imwidth=%3Awidth%3A&ts=1708685590425&w=580&f=auto"
+            alt="Product Image"
+          />
+          <p>Volume Sneakers</p>
+          <p class="Price">34.99 €</p>
+          <button>Buy</button>
+        </div>
+        <div class="Product">
+          <img
+            src="https://static.pullandbear.net/2/photos//2024/V/1/1/p/1352/340/004/1352340004_4_1_0.jpg?imwidth=%3Awidth%3A&ts=1708515007976&w=580&f=auto"
+            alt="Product Image"
+          />
+          <p>Multi-piece Sport Sneakers</p>
+          <p class="Price">40.99 €</p>
+          <button>Buy</button>
+        </div>
+        <div class="Product">
+          <img
+            src="https://static.pullandbear.net/assets/public/84cf/418b/a6fb4caabeaf/b9afac4b6a93/11301440004-m/11301440004-m.jpg?ts=1723641169036&w=580&f=auto"
+            alt="Product Image"
+          />
+          <p>Skate Sneakers</p>
+          <p class="Price">29.99 €</p>
+          <button>Buy</button>
+        </div>
+        <div class="Product">
+          <img
+            src="https://static.pullandbear.net/assets/public/60a0/d2a1/c6324f5f87ef/e19f6e73dede/11307440040-m/11307440040-m.jpg?ts=1721894693128&w=580&f=auto"
+            alt="Product Image"
+          />
+          <p>Black Sneakers</p>
           <p class="Price">19.99 €</p>
           <button>Buy</button>
         </div>

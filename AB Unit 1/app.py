@@ -14,6 +14,10 @@ def HoodieMan():
 def Login():
     return render_template("Login.html")
 
+@app.route("/SignUp")
+def SignUp():
+    return render_template("SignUp.html")
+
 @app.route("/LogSignAcc")
 def LogSignAcc():
     return render_template("LogSignAcc.html")
@@ -49,6 +53,18 @@ def TShirtsMan():
 @app.route("/SneakersMan")
 def SneakersMan():
     return render_template("SneakersMan.html")
+
+@app.route("/TrousersWoman")
+def TrousersWoman():
+    return render_template("TrousersWoman.html")
+
+@app.route("/DressesWoman")
+def DressesWoman():
+    return render_template("DressesWoman.html")
+
+@app.route("/HoodieWoman")
+def HoodieWoman():
+    return render_template("HoodieWoman.html")
 
 if __name__ == "__main__":
     app.run(debug=True)

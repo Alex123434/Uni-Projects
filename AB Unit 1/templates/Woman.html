@@ -57,37 +57,156 @@
     <div class="Products">
       <div class="ProductTag">
         <div class="Tag">
-          <a href="HoodiesWoman"><button>Hoodies</button></a>
+          <a href="{{ url_for('HoodieWoman') }}"><button>Hoodies</button></a>
         </div>
         <div class="Tag">
-          <a href="JeansWoman"><button>Jeans</button></a>
+          <a href="{{ url_for('TrousersWoman') }}"><button>Trousers</button></a>
         </div>
         <div class="Tag">
-          <a href="DressesWoman.html"><button>Dresses</button></a>
+          <a href="{{ url_for('DressesWoman') }}"><button>Dresses</button></a>
         </div>
         <div class="Tag">
-          <a href="SneakersWoman.html"><button>Sneakers</button></a>
+          <a href="{{ url_for('SneakersWoman') }}"><button>Sneakers</button></a>
         </div>
       </div>
     </div>
 
+    <p class="Title">Bestseller</p>
+
     <div class="Products">
       <div class="ProductsContainer">
         <div class="Product">
-          <img src="image1.jpg" alt="Product Image" />
-          <p>Item 1</p>
-          <p class="Price">27.99 €</p>
-          <button>Buy</button>
-        </div>
-        <div class="Product">
-          <img src="image2.jpg" alt="Product Image" />
-          <p>Item 2</p>
+          <img
+            src="https://static.pullandbear.net/assets/public/ca46/58a3/c10f4433a314/f67b974b6b71/03687300427-A6M/03687300427-A6M.jpg?ts=1729005489501&w=572&f=auto"
+            alt="Product Image"
+          />
+          <p>Straight Jeans</p>
           <p class="Price">29.99 €</p>
           <button>Buy</button>
         </div>
         <div class="Product">
-          <img src="image3.jpg" alt="Product Image" />
-          <p>Item 3</p>
+          <img
+            src="https://static.pullandbear.net/assets/public/90d5/ab9e/b89445b991ee/f37c138fc8ea/11279440040-m/11279440040-m.jpg?ts=1731669480169&w=572&f=auto"
+            alt="Product Image"
+          />
+          <p>Cowboy Boots</p>
+          <p class="Price">39.99 €</p>
+          <button>Buy</button>
+        </div>
+        <div class="Product">
+          <img
+            src="https://static.pullandbear.net/assets/public/0f2f/4d74/bb314ed78e01/2d547bc87833/07710338800-A6M/07710338800-A6M.jpg?ts=1727368237203&w=572&f=auto"
+            alt="Product Image"
+          />
+          <p>Black Jacket</p>
+          <p class="Price">59.99 €</p>
+          <button>Buy</button>
+        </div>
+        <div class="Product">
+          <img
+            src="https://static.pullandbear.net/assets/public/216b/f1be/d63549efa6c6/93d31dd49a18/14051440020-m/14051440020-m.jpg?ts=1719310324832&w=572&f=auto"
+            alt="Product Image"
+          />
+          <p>Red Handbag</p>
+          <p class="Price">25.99 €</p>
+          <button>Buy</button>
+        </div>
+        <div class="Product">
+          <img
+            src="https://static.pullandbear.net/assets/public/b830/a565/d4b84a3eaa92/cbb9501cecff/03680302481-A6M/03680302481-A6M.jpg?ts=1727341974705&w=572&f=auto"
+            alt="Product Image"
+          />
+          <p>Straight Jeans</p>
+          <p class="Price">25.99 €</p>
+          <button>Buy</button>
+        </div>
+        <div class="Product">
+          <img
+            src="https://static.pullandbear.net/assets/public/1655/c03e/39f94aeca744/156fdc20ae94/07781300800-A6M/07781300800-A6M.jpg?ts=1721807802329&w=572&f=auto"
+            alt="Product Image"
+          />
+          <p>Basic Blazer</p>
+          <p class="Price">29.99 €</p>
+          <button>Buy</button>
+        </div>
+        <div class="Product">
+          <img
+            src="https://static.pullandbear.net/assets/public/d286/3479/284745d6b269/fec77564a49f/07711369800-A6M/07711369800-A6M.jpg?ts=1724319444357&w=572&f=auto"
+            alt="Product Image"
+          />
+          <p>Black Coat</p>
+          <p class="Price">45.99 €</p>
+          <button>Buy</button>
+        </div>
+        <div class="Product">
+          <img
+            src="https://static.pullandbear.net/assets/public/ee54/6e98/d7504eceb771/8e3449c681c8/07252329104-A6M/07252329104-A6M.jpg?ts=1724689977394&w=572&f=auto"
+            alt="Product Image"
+          />
+          <p>Stripped T-Shirt</p>
+          <p class="Price">12.99 €</p>
+          <button>Buy</button>
+        </div>
+        <div class="Product">
+          <img
+            src="https://static.pullandbear.net/assets/public/1229/46b9/4536443ca6d7/000a41a52fa6/03558320803-A6M/03558320803-A6M.jpg?ts=1730302882063&w=572&f=auto"
+            alt="Product Image"
+          />
+          <p>Grey Sweater</p>
+          <p class="Price">22.99 €</p>
+          <button>Buy</button>
+        </div>
+        <div class="Product">
+          <img
+            src="https://static.pullandbear.net/2/photos//2024/V/1/1/p/4222/340/091/4222340091_4_1_0.jpg?imwidth=%3Awidth%3A&ts=1712846703232&w=572&f=auto"
+            alt="Product Image"
+          />
+          <p>Metalisised Bandolere</p>
+          <p class="Price">14.99 €</p>
+          <button>Buy</button>
+        </div>
+        <div class="Product">
+          <img
+            src="https://static.pullandbear.net/assets/public/0f5a/dd5f/6bdf47ec8265/dde9503939a6/07554305430-A6M/07554305430-A6M.jpg?ts=1721200643647&w=572&f=auto"
+            alt="Product Image"
+          />
+          <p>Oversised Sweater</p>
+          <p class="Price">29.99 €</p>
+          <button>Buy</button>
+        </div>
+        <div class="Product">
+          <img
+            src="https://static.pullandbear.net/assets/public/109f/24ac/ac854590a0c5/80058ec79da1/11524440040-m/11524440040-m.jpg?ts=1730983086969&w=572&f=auto"
+            alt="Product Image"
+          />
+          <p>Black High Heels</p>
+          <p class="Price">25.99 €</p>
+          <button>Buy</button>
+        </div>
+        <div class="Product">
+          <img
+            src="https://static.pullandbear.net/assets/public/be03/30f2/855440ba9a51/db838260fe2c/07580305716-A6M/07580305716-A6M.jpg?ts=1733832745442&w=572&f=auto"
+            alt="Product Image"
+          />
+          <p>Brown Cardigan</p>
+          <p class="Price">27.99 €</p>
+          <button>Buy</button>
+        </div>
+        <div class="Product">
+          <img
+            src="https://static.pullandbear.net/assets/public/7663/85e7/3cf04b0c990c/880a50913370/07751301737-A6M/07751301737-A6M.jpg?ts=1727776616473&w=572&f=auto"
+            alt="Product Image"
+          />
+          <p>Long Coat</p>
+          <p class="Price">49.99 €</p>
+          <button>Buy</button>
+        </div>
+        <div class="Product">
+          <img
+            src="https://static.pullandbear.net/assets/public/3adc/0e0b/d0e94f308e2b/284f562af1b6/07252347606-A6M/07252347606-A6M.jpg?ts=1724690011254&w=572&f=auto"
+            alt="Product Image"
+          />
+          <p>Red Top</p>
           <p class="Price">19.99 €</p>
           <button>Buy</button>
         </div>
