@@ -1,0 +1,18 @@
+To stage specific files:
+git add filename
+
+To stage all changes:
+git add .
+
+Commit the Staged Changes:
+git commit -m "Your commit message"
+
+Fetch (retrieve) updates from the remote repository:
+git fetch origin
+
+Pull (incorporate) changes from GitHub:
+git pull origin main
+
+Push the Changes to the GitHub repository:
+git push origin main
+Replace main with your branch name if it’s different.
