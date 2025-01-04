@@ -79,6 +79,11 @@ body::-webkit-scrollbar {
     font-weight: bold;
 }
 
+#cart:hover{
+    cursor: pointer;
+    
+
+}
 .Selection{
 
     display: flex;

@@ -40,6 +40,10 @@ def Woman():
 def SneakersWoman():
     return render_template("SneakersWoman.html")
 
+@app.route("/EmptyShoppingCart")
+def EmptyShoppingCart():
+    return render_template("EmptyShoppingCart.html")
+
 @app.route("/ShoppingCart")
 def ShoppingCart():
     return render_template("ShoppingCart.html")
