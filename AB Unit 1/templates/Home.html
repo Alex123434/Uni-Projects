@@ -36,9 +36,20 @@
         <a href="{{ url_for('Home') }}" class="logo">Nove</a>
         <div class="navRight">
           <input type="text" class="searchBox" placeholder="&#x1F50D; Search" />
-          <a id="cart">&#x1F6D2;</a>
+          <a id="cart" class="cartIcon">&#x1F6D2;</a>
+          <span class="counter">0</span>
         </div>
       </nav>
+    </div>
+
+    <div class="shoppingCart">
+      <div class="cartModal hidden">
+        <h2>Your Cart</h2>
+        <ul class="cartList">
+          <!-- Cart items will be listed here -->
+        </ul>
+        <button class="closeCart" aria-label="Close Cart">Close</button>
+      </div>
     </div>
 
     <div class="Selection">

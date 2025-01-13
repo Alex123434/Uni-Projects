@@ -500,3 +500,53 @@ label{
     align-items: center;
     justify-content: center;
 }
+
+.hidden {
+    display: none;
+}
+
+.shoppingCart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;  /* Ensures it's positioned relative to its parent */
+}
+
+.hiddenCartModal {
+    position: fixed;
+    top: 50px;
+    right: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 300px;
+    max-height: 400px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;  /* Ensures the modal appears above other content */
+}
+
+.closeCart {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+.counter {
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 14px;
+    z-index: 100;  /* Ensures the counter stays above other elements */
+}
