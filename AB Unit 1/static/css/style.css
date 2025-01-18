@@ -501,43 +501,52 @@ label{
     justify-content: center;
 }
 
-.hidden {
-    display: none;
-}
-
+/* Modal Styles */
 .shoppingCart {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;  /* Ensures it's positioned relative to its parent */
+    border: none;
 }
 
-.hiddenCartModal {
-    position: fixed;
-    top: 50px;
-    right: 20px;
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.cartModal {
+    background-color: #fff;
     padding: 20px;
-    width: 300px;
-    max-height: 400px;
-    overflow-y: auto;
-    display: flex;
-    flex-direction: column;
-    z-index: 1000;  /* Ensures the modal appears above other content */
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.cartModal h2 {
+    margin-bottom: 15px;
+}
+
+.cartModal ul {
+    list-style: none;
+    padding: 1rem;
+    margin-bottom: 15px;
 }
 
 .closeCart {
-    background-color: #ff4d4d;
-    color: white;
+    background-color: black;
+    color: #fff;
     border: none;
-    border-radius: 5px;
-    padding: 8px 12px;
+    padding: 10px 20px;
     cursor: pointer;
-    align-self: flex-end;
+    border-radius: 5px;
 }
+
+.closeCart:hover {
+    background-color: black;
+}
+
 
 .counter {
     background-color: black;
