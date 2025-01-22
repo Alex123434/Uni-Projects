@@ -10,16 +10,14 @@ const closeCart = document.querySelector('.closeCart'); // Close button for the 
 const cartModal = document.querySelector('.cartModal'); // The modal itself
 const cartBtn = document.getElementById("cart");
 
-
-cartBtn.addEventListener(`click`, function(event) {
+cartBtn.addEventListener(`click`, function (event) {
   if (items === 0) {
     window.location.href = `/EmptyShoppingCart`;
-  } 
-  else {
+  } else {
     // Open the cart modal on button click
     openCart.addEventListener('click', () => {
-    cartModal.showModal(); // Open the modal
-});
+      cartModal.showModal(); // Open the modal
+    });
   }
 });
 
@@ -29,6 +27,14 @@ let cart = [];
 // Update the cart counter
 function updateCounter() {
   counter.textContent = cart.length; // Update counter display
+}
+
+// Calculate the total price of the cart items
+function calculateTotalPrice() {
+  return cart.reduce((total, product) => {
+    const price = parseFloat(product.price.replace('$', '')); // Remove currency symbol and parse price
+    return total + price;
+  }, 0);
 }
 
 // Display the products in the cart modal
@@ -45,6 +51,12 @@ function showCart() {
     item.appendChild(productText);
     cartList.appendChild(item);
   });
+
+  // Calculate and display the total price
+  const totalPrice = calculateTotalPrice();
+  const totalItem = document.createElement('li');
+  totalItem.textContent = `Total: $${totalPrice.toFixed(2)}`; // Format to 2 decimal places
+  cartList.appendChild(totalItem);
 }
 
 // Add products to the cart
@@ -64,8 +76,6 @@ addButtons.forEach((button) => {
     }
   });
 });
-
-
 
 // Close the cart modal on button click
 closeCart.addEventListener('click', () => {
