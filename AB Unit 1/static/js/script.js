@@ -1,83 +1,95 @@
 let items = 0;
 
-// Select key elements
-const addButtons = document.querySelectorAll('.Product button'); // Add to cart buttons
-const cartIcon = document.querySelector('#cart'); // Cart icon
-const cartList = document.querySelector('.cartList'); // Cart items list
-const counter = document.querySelector('.counter'); // Cart counter
-const openCart = document.querySelector('.openCart'); // Button to open the cart modal
-const closeCart = document.querySelector('.closeCart'); // Close button for the cart modal
-const cartModal = document.querySelector('.cartModal'); // The modal itself
+// Seleccion de los elementos clave
+
+const addButtons = document.querySelectorAll('.Product button'); 
+const cartIcon = document.querySelector('#cart'); 
+const cartList = document.querySelector('.cartList'); 
+const counter = document.querySelector('.counter'); 
+const openCart = document.querySelector('.openCart'); 
+const closeCart = document.querySelector('.closeCart'); 
+const cartModal = document.querySelector('.cartModal'); 
 const cartBtn = document.getElementById("cart");
+
+// Compribar si hay productos en el carrito
 
 cartBtn.addEventListener(`click`, function (event) {
   if (items === 0) {
     window.location.href = `/EmptyShoppingCart`;
   } else {
-    // Open the cart modal on button click
+
+    // Abrir el modal al interactuar con el carrito
+
     openCart.addEventListener('click', () => {
-      cartModal.showModal(); // Open the modal
+      cartModal.showModal(); // Abrir el modal
     });
   }
 });
 
-// Array to store cart items
+// Array donde se almacenan los productos seleccionados
+
 let cart = [];
 
-// Update the cart counter
+// Funcion para actualizar el contador del carrito
+
 function updateCounter() {
-  counter.textContent = cart.length; // Update counter display
+  counter.textContent = cart.length;
 }
 
-// Calculate the total price of the cart items
+// Funcion para calcular el precio total de las productos en el carrito
+
 function calculateTotalPrice() {
   return cart.reduce((total, product) => {
-    const price = parseFloat(product.price.replace('$', '')); // Remove currency symbol and parse price
+    const price = parseFloat(product.price.replace('€', '')); 
     return total + price;
   }, 0);
 }
 
-// Display the products in the cart modal
+// Mostrar los productos en el carrito
+
 function showCart() {
-  cartList.innerHTML = ''; // Clear existing items
+  cartList.innerHTML = ''; 
   cart.forEach((product) => {
     const item = document.createElement('li');
     
-    // Create product details (name and price)
+
     const productText = document.createElement('span');
     productText.textContent = `${product.name} - ${product.price}`;
     
-    // Append product text to the item
+   
     item.appendChild(productText);
     cartList.appendChild(item);
   });
 
-  // Calculate and display the total price
+  // Formatear el precio total a 2 decimales
+
   const totalPrice = calculateTotalPrice();
   const totalItem = document.createElement('li');
-  totalItem.textContent = `Total: $${totalPrice.toFixed(2)}`; // Format to 2 decimal places
+  totalItem.textContent = `Total: $${totalPrice.toFixed(2)}`; 
   cartList.appendChild(totalItem);
 }
 
-// Add products to the cart
+//Añadir productos al carrito
+
 addButtons.forEach((button) => {
   button.addEventListener('click', (e) => {
-    const productElement = e.target.closest('.Product'); // Get the product element
+    const productElement = e.target.closest('.Product'); 
     if (productElement) {
-      const name = productElement.querySelector('p').textContent; // Get product name
-      const price = productElement.querySelector('.Price').textContent; // Get product price
+      const name = productElement.querySelector('p').textContent; 
+      const price = productElement.querySelector('.Price').textContent; 
 
-      // Add product (name and price) to the cart
+   
       cart.push({ name, price });
-      items++; // Increment item count
-      updateCounter(); // Update the cart counter
-      showCart(); // Show updated cart in the modal
-      console.log(cart); // Log the cart items
+      items++; 
+      updateCounter(); 
+      showCart(); 
+      console.log(cart); 
     }
   });
 });
 
-// Close the cart modal on button click
+// Cerar el carrito al interactuar con el boton de cerrar
+
 closeCart.addEventListener('click', () => {
-  cartModal.close(); // Close the modal
+  cartModal.close(); 
 });

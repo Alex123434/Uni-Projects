@@ -1,3 +1,5 @@
+/* Estilos generales de la web */
+
 html, body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -9,6 +11,8 @@ html, body {
 body::-webkit-scrollbar {
     display: none; 
 }
+
+/* Estilos de la barra de navegación */
 
 .nav {
     display: flex;
@@ -83,6 +87,8 @@ body::-webkit-scrollbar {
     cursor: pointer;
     
 
+/* Estilos de el menu de seleccion de la pagina principal */
+
 }
 
 .Selection{
@@ -136,14 +142,16 @@ body::-webkit-scrollbar {
     text-decoration: none;
 }
 
-#Man button{
-    background-image: url(https://images.pexels.com/photos/2122844/pexels-photo-2122844.jpeg?auto=compress&cs=tinysrgb&w=600);
-}
+    #Man button{
+        background-image: url(https://images.pexels.com/photos/2122844/pexels-photo-2122844.jpeg?auto=compress&cs=tinysrgb&w=600);
+    }
 
-#Woman button{
-    background-image: url(https://images.pexels.com/photos/14008893/pexels-photo-14008893.jpeg?auto=compress&cs=tinysrgb&w=600);
-}
+    #Woman button{
+        background-image: url(https://images.pexels.com/photos/14008893/pexels-photo-14008893.jpeg?auto=compress&cs=tinysrgb&w=600);
+    }
 
+
+/* Estilos de la Seccion de productos */
 
 .Title {
     font-size: 3rem;
@@ -301,6 +309,8 @@ body::-webkit-scrollbar {
 
     font-weight: bold;
   }
+
+  /* Estilos del footer */
   
   .Footer{
 
@@ -345,6 +355,8 @@ body::-webkit-scrollbar {
     transform: translateX(-50%);
 }
 
+
+/* Estilos de la pagina de cuenta, inicio de sesion y registro */
 
 .AccContainer {
     display: flex;
@@ -502,7 +514,8 @@ label{
     justify-content: center;
 }
 
-/* Modal Styles */
+/* Estilos del modal del carrito */
+
 .shoppingCart {
     position: fixed;
     top: 0;
@@ -558,5 +571,5 @@ label{
     top: 10px;
     right: 15px;
     font-size: 14px;
-    z-index: 100;  /* Ensures the counter stays above other elements */
+    z-index: 100;  /
 }

@@ -4,6 +4,8 @@ from flask import Flask, render_template
 app = Flask(__name__)
 
 
+# Rutas, para la gention de las diversas paginas
+
 @app.route("/")
 def Home():
     return render_template("home.html")
