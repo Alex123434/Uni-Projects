@@ -27,7 +27,7 @@
     <title>Man | Nove</title>
   </head>
   <body>
-    // Barra de navegacion
+    <!-- Barra de navegacion -->
 
     <div class="containerIntro">
       <nav class="nav">
@@ -38,12 +38,13 @@
         <a href="{{ url_for('Home') }}" class="logo">Nove</a>
         <div class="navRight">
           <input type="text" class="searchBox" placeholder="&#x1F50D; Search" />
-          <a id="cart">&#x1F6D2;</a>
+          <a id="cart" class="openCart">&#x1F6D2;</a>
+          <span class="counter">0</span>
         </div>
       </nav>
     </div>
 
-    // Modal del carrito de la compra
+    <!-- Modal del carrito de la compra -->
 
     <dialog class="cartModal">
       <h2>Your Cart</h2>
@@ -51,7 +52,7 @@
       <button class="closeCart" aria-label="Close Cart">Close</button>
     </dialog>
 
-    // Video de fondo
+    <!-- Video de fondo -->
 
     <div class="PageCover">
       <video class="CoverVideo" autoplay muted loop>
@@ -65,7 +66,7 @@
 
     <p class="Title">Hoodies</p>
 
-    // Seleccion de tipos de productos
+    <!-- Seleccion de tipos de productos -->
 
     <div class="Products">
       <div class="ProductTag">
@@ -84,7 +85,7 @@
       </div>
     </div>
 
-    // Productos
+    <!-- Productos -->
 
     <div class="Products">
       <div class="ProductsContainer">
@@ -207,22 +208,26 @@
         </div>
         <div class="Product">
           <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3OGiunITYztmptjmi4XDrD1ZCozsFmraCRLGzsI3oBxZAJkWzoO5fylmz0-lyKreSfp4&usqp=CAU"
+            src="https://static.pullandbear.net/assets/public/fa7e/f6ed/5f8c43fcbdc7/8035b2d8fb75/03594939400-A7M/03594939400-A7M.jpg?ts=1738056193486&w=603&f=auto"
             alt="Product Image"
           />
-          <p>Currently not available</p>
+          <p>Giants Hoodie</p>
+          <p class="Price">29.99 €</p>
+          <button>Buy</button>
         </div>
         <div class="Product">
           <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3OGiunITYztmptjmi4XDrD1ZCozsFmraCRLGzsI3oBxZAJkWzoO5fylmz0-lyKreSfp4&usqp=CAU"
+            src="https://static.pullandbear.net/assets/public/1812/3d0d/b54b44da833d/807bc37babca/03594509251-A7M/03594509251-A7M.jpg?ts=1733824442333&w=603&f=auto"
             alt="Product Image"
           />
-          <p>Currently not available</p>
+          <p>Tree Hoodie</p>
+          <p class="Price">19.99 €</p>
+          <button>Buy</button>
         </div>
       </div>
     </div>
 
-    //Footer
+    <!-- Footer -->
 
     <footer>
       <div class="Footer">

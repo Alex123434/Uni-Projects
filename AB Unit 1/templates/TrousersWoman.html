@@ -28,7 +28,7 @@
     <title>Woman | Nove</title>
   </head>
   <body>
-    // Barra de navegacion
+    <!-- Barra de navegacion -->
 
     <div class="containerIntro">
       <nav class="nav">
@@ -39,12 +39,13 @@
         <a href="{{ url_for('Home') }}" class="logo">Nove</a>
         <div class="navRight">
           <input type="text" class="searchBox" placeholder="&#x1F50D; Search" />
-          <a id="cart">&#x1F6D2;</a>
+          <a id="cart" class="openCart">&#x1F6D2;</a>
+          <span class="counter">0</span>
         </div>
       </nav>
     </div>
 
-    // Modal del carrito de la compra
+    <!-- Modal del carrito de la compra -->
 
     <dialog class="cartModal">
       <h2>Your Cart</h2>
@@ -52,7 +53,7 @@
       <button class="closeCart" aria-label="Close Cart">Close</button>
     </dialog>
 
-    // Video de fondo
+    <!-- Video de fondo -->
 
     <div class="PageCover">
       <video class="CoverVideo" autoplay muted loop>
@@ -66,7 +67,7 @@
 
     <p class="Title">Trousers</p>
 
-    // Seleccion de tipos de productos
+    <!-- Seleccion de tipos de productos -->
 
     <div class="Products">
       <div class="ProductTag">
@@ -85,7 +86,7 @@
       </div>
     </div>
 
-    // Productos en la seccion
+    <!-- Productos en la seccion -->
 
     <div class="Products">
       <div class="ProductsContainer">
@@ -227,7 +228,7 @@
       </div>
     </div>
 
-    // Footer
+    <!-- Footer -->
 
     <footer>
       <div class="Footer">

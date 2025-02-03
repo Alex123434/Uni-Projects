@@ -11,7 +11,7 @@ const closeCart = document.querySelector('.closeCart');
 const cartModal = document.querySelector('.cartModal'); 
 const cartBtn = document.getElementById("cart");
 
-// Compribar si hay productos en el carrito
+// Comprobar si hay productos en el carrito
 
 cartBtn.addEventListener(`click`, function (event) {
   if (items === 0) {
@@ -65,7 +65,7 @@ function showCart() {
 
   const totalPrice = calculateTotalPrice();
   const totalItem = document.createElement('li');
-  totalItem.textContent = `Total: $${totalPrice.toFixed(2)}`; 
+  totalItem.textContent = `Total: €${totalPrice.toFixed(2)}`; 
   cartList.appendChild(totalItem);
 }
 
